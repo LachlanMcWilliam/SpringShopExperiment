@@ -1,9 +1,8 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <HTML>
  <head>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.5/dist/popper.min.js"></script>
@@ -76,32 +75,6 @@
       <br>
       <br>
       <br>
-      <div class = "row">
-      <c:set var = "counter" value = "0" scope = "page"></c:set>
-      <c:forEach var = "productItem" items = "${products}">
-        <c:set var = "counter" value = "${counter + 1}" scope = "page"></c:set>
-        <div class="col-sm-4">
-            <div class="row">
-              <div class="col-sm-6">
-                <img class="img-thumbnail" src="images/rocks.jpg"></img>
-              </div>
-              <div class="col-sm-6">
-                <div class="row">
-                  ${productItem.description}
-                </div>
-                <div class="row">
-                  <a class="btn btn-primary btn-sm" href = "/products/${productItem.id}">Click here</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <c:if test = "${counter == '3'}">
-          <c:set var = "counter" value = "0" scope = "page"></c:set>
-            </div>
-            <div class = "row">
-        </c:if>
-      </c:forEach>
-    </div>
       <div class="row">
         <div class="col-sm-4">
           <div class="row">
