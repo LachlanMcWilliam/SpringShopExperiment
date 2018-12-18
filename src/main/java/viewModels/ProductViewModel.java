@@ -1,6 +1,6 @@
 package viewModels;
 
-public class Product {
+public class ProductViewModel {
 
     public int id;
     public String name;
@@ -9,17 +9,17 @@ public class Product {
     public int price;
     public String description;
 
-    public Product() {
+    public ProductViewModel() {
     }
 
-    public Product(String name, int stock, int weight, int price){
+    public ProductViewModel(String name, int stock, int weight, int price){
         this.name = name;
         this.stock = stock;
         this.weight = weight;
         this.price = price;
     }
 
-    public Product(String name, int stock, int weight, int price, String description){
+    public ProductViewModel(String name, int stock, int weight, int price, String description){
         this.name = name;
         this.stock = stock;
         this.weight = weight;
@@ -27,7 +27,7 @@ public class Product {
         this.description = description;
     }
 
-    public Product(int id, String name, int stock, int weight, int price, String description){
+    public ProductViewModel(int id, String name, int stock, int weight, int price, String description){
         this.id = id;
         this.name = name;
         this.stock = stock;

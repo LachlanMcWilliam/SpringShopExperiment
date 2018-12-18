@@ -4,15 +4,13 @@
 
 <HTML>
  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="/resources/static/js/jquery-3.3.1.js"></script>
-    <script src="/resources/static/js/popper.js"></script>
-    <script src="/resources/static/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.5/dist/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
  </head>
  <body>
    <!-- OPEN NAV BAR -->
-   ${product.name}
-
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">B&Q</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,8 +52,8 @@
      <!--buffer-->
    </div>
    <div class="col-sm-4">
-     <h1>Rocks</h1>
-     <p>Product id:</p>
+     <h1>${product.name}</h1>
+     <p>Product id: ${product.id}</p>
    </div>
    <div class="col-sm-4">
    </div>
@@ -73,7 +71,7 @@
     </div>
     <div class="col-sm-4">
       <div class="row">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. </p>
+        <p> ${product.description} </p>
       </div>
       <div class="row">
         <div class="input-group mb-3">
